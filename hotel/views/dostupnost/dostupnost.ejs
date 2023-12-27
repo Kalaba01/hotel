@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="icon" href="/img/hotel.png" type="image/x-icon">
+    <title>Dostupnost soba</title>
+</head>
+<body class="text-center">
+
+<div class="container my-auto">
+    <h1 class="mt-5">Dostupnost soba</h1><br><br>
+
+    <form action="/dostupnost/rezultat" method="post">
+        <label for="calendar" class="lead">Molimo Vas izaberite zeljeni datum kako bismo provjerili dostupnost soba:</label>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <input type="date" class="form-control mb-2" name="parametar">
+            </div>
+
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-success btn-block mb-2">Prikazi</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

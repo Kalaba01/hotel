@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/izvjestaj-ponuda.css"/>
+    <link rel="icon" href="/img/hotel.png" type="image/x-icon">
+    <title>Izvestaji</title>
+</head>
+<body>
+<div class="container text-center">
+    <h1>Izvestaji</h1><br><br>
+    <p class="lead">Izaberite koju vrstu izvestaja zelite da vidite: </p>
+
+    <form action="/izvjestaj/vrsta"  method="post">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="input-group mb-3">
+                    <select class="custom-select" name="izbor" id="izvestajDropdown">
+                        <option value="brojGostijuPoMesecima">Ukupan broj gostiju po mjesecima za godinu</option>
+                        <option value="statusRezervacijeZaVrstuKupca">Status rezervacije</option>
+                        <option value="agencijaAlotman">Zauzetost alotmana za odredjeni datum</option>
+                        <option value="statusPoTipovimaSoba">Status soba po broju lezaja</option>
+                        <option value="brojGostijuPoDrzavama">Broj gostiju iz drzava</option>
+                        <option value="brojNocenjaPoDrzavama">Broj nocenja iz drzava</option>
+                        <option value="uporedniIzvjestaj">Uporedni izvjestaj o broju zauzetih soba</option>
+                    </select>
+                    <div class="input-group-append">
+                        <button id="btnPrikazi" class="btn btn-primary" type="submit">Prikazi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

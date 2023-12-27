@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="/img/hotel.png" type="image/x-icon">
+    <title>Stavke alotmana</title>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center">Stavke alotmana</h1>
+
+    <table class="table table-bordered mt-4">
+        <thead>
+        <tr>
+            <th>stavke_id</th>
+            <th>tip_sobe</th>
+            <th>broj_soba</th>
+            <th>zaglavlje_id</th>
+            <th><button class="btn btn-success" id="addRowButton" onclick="noviRed()">Novi red</button></th>
+        </tr>
+        <tr>
+            <td><input type="text" class="form-control" name="stavke_id[]"></td>
+            <td><input type="text" class="form-control" name="tip_sobe[]"></td>
+            <td><input type="text" class="form-control" name="broj_soba[]"></td>
+            <td><input type="text" class="form-control" name="zaglavlje_id[]"></td>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div class="button-container text-center mt-3">
+        <button class="btn btn-success" id="saveButton" onclick="sacuvajJSON()">Posalji</button>
+    </div>
+</div>
+
+<script src="/js/alotman-stavke.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(25deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
+}
+.page-content {
+    height: 100vh; /* Postavlja visinu na 100% visine viewporta */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-size: 3em; /* Ekvivalentno 36px */
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5%;
+}
+.btn-group {
+    margin: 5% 15% 1% 1%;
+}
+.btn {
+    font-size: 1.5em; /* Ekvivalentno 18px */
+    font-weight: bold;
+    width: 55%;
+    margin: 1% 5% 1% 5%;
+
+}

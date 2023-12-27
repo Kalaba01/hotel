@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="/img/hotel.png" type="image/x-icon">
+    <title>Alotman</title>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center">Alotman</h1>
+
+    <table class="table table-bordered mt-4">
+        <thead>
+        <tr>
+            <th>zaglavlje_id</th>
+            <th>kupac</th>
+            <th>pocetni_datum</th>
+            <th>krajnji_datum</th>
+            <th>status</th>
+            <th>napomena</th>
+            <th><button class="btn btn-success" id="addRowButton" onclick="noviRed()">Novi red</button></th>
+        </tr>
+        <tr>
+            <td><input type="text" class="form-control" name="zaglavlje_id[]"></td>
+            <td><input type="text" class="form-control" name="kupac[]"></td>
+            <td><input type="text" class="form-control" name="pocetni_datum[]"></td>
+            <td><input type="text" class="form-control" name="krajnji_datum[]"></td>
+            <td><input type="text" class="form-control" name="status[]"></td>
+            <td><input type="text" class="form-control" name="napomena[]"></td>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div class="button-container text-center mt-3">
+        <button class="btn btn-success" id="saveButton" onclick="sacuvajJSON()">Posalji</button>
+    </div>
+</div>
+
+<script src="/js/alotman.js"></script>
+
+</body>
+</html>

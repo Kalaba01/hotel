@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unos podataka za izvjestaj</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/izvjestaj-forma-4.css"/>
+    <link rel="icon" href="/img/hotel.png" type="image/x-icon">
+</head>
+<body>
+
+<div class="container text-center mt-5">
+    <h1>Unos podataka za uporedni izvjestaj</h1>
+
+    <form action="/izvjestaj/unos/uporedniIzvjestaj" method="post" class="mt-5 d-flex flex-column align-items-start">
+        <div class="form-group">
+            <label class="mr-2">Prvi pocetni datum:</label>
+            <input type="text" class="form-control custom-input" name="parametar1" placeholder="Unesite datum" required>
+        </div>
+        <div class="form-group">
+            <label class="mr-2">Prvi krajnji datum:</label>
+            <input type="text" class="form-control custom-input" name="parametar2" placeholder="Unesite datum" required>
+        </div>
+        <div class="form-group">
+            <label class="mr-2">Drugi pocetni datum:</label>
+            <input type="text" class="form-control custom-input" name="parametar3" placeholder="Unesite datum" required>
+        </div>
+        <div class="form-group">
+            <label class="mr-2">Drugi krajnji datum:</label>
+            <input type="text" class="form-control custom-input" name="parametar4" placeholder="Unesite datum" required>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-success" id="button2">Posalji</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

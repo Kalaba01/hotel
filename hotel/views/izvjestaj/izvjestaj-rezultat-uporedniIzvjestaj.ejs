@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="/img/hotel.png" type="image/x-icon">
+    <title>Izvjestaj</title>
+</head>
+<body>
+<div class="container text-center">
+    <h1 class="mt-5">Uporedni izvjestaj o zauzetosti soba</h1><br>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Tip sobe</th>
+            <th>Broj zauzetih soba u prvom terminu</th>
+            <th>Broj zauzetih soba u drugom terminu</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% for(let i=0; i<listaRezultat.length; i++){ %>
+            <tr>
+                <td><%= listaRezultat[i].BrojLezaja%></td>
+                <td><%= listaRezultat[i].BrojZauzetihSoba1%></td>
+                <td><%= listaRezultat[i].BrojZauzetihSoba2%></td>
+            </tr>
+        <%}%>
+        </tbody>
+    </table>
+    <div id="butoni" class="row justify-content-center mt-3">
+        <div class="col-md-3">
+            <button id="newAlotmanButton" class="btn btn-primary btn-block" onclick="noviIzvjestaj()">Novi izvjestaj</button>
+        </div>
+
+        <div class="col-md-3">
+            <button id="homeButton" class="btn btn-primary btn-block" onclick="pocetna()">Pocetna</button>
+        </div>
+    </div>
+</div>
+<script src="/js/izvjestaj.js"></script>
+</body>
+</html>
